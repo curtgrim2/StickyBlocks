@@ -1,0 +1,110 @@
+<!DOCTYPE>
+<html>
+<head>
+  <style>
+  #overall{
+    color:white;
+    text-align: center;
+    height:200%;
+    width:50%;
+    display:inline-block;
+  }
+  #title{
+    display:inline-block;
+    font-size:50px;
+    width:50%;
+    text-align:left;
+    position:fixed;
+    top:25%;
+  }
+  .blocks{
+
+  }
+  .topblock{
+    background-color:green;
+    border:1px solid black;
+    height:10%;
+    width:30%;
+    position: sticky;
+    position: -webkit- sticky;
+    top:0;
+  }
+#block2{
+     position: sticky;
+    position: -webkit- sticky;
+    top:20%;
+    transform:translateX(10%);
+    /*transform:translateY(40%);*/ /**/
+
+    background-color:tan;
+    border:1px solid black;
+    height:10%;width:35%;
+    color:black;
+  }
+
+  #block3{
+    position:sticky;
+    position: -webkit- sticky;
+    top:40%;
+    height:10%;width:30%;
+    background-color:tan;
+    border:1px solid black;
+    color:black;
+  }
+  #block4{
+    position:sticky;
+    position: -webkit- sticky;
+    top:60%;
+
+    height:10%;width:33%;
+    transform:translateX(15%);
+    background-color:tan;
+    border:1px solid black;
+    color:black;
+  }
+  #lastblock{
+    position:sticky;
+    position: -webkit- sticky;
+    top:100%;
+
+    height:10%;width:35%;
+    background-color:red;
+    border:1px solid black;
+    color:white;
+
+  }
+.blocks:last-child{
+/*  background-color: red;
+  position: relative;
+bottom:90%; */
+}
+  </style>
+</head>
+<body>
+<div id="overall">
+<div class="topblock">
+START BLOCK
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="block2"class="blocks">
+  The purpose of these blocks is to stack on each other.
+</div>
+<br><br><br><br><br><br><br><br><br><br><br>
+<div id="block3" class="blocks">
+  Like So.
+</div>
+<br><br><br><br><br><br><br><br><br><br>
+<div id="block4" class="blocks">
+  And more so!
+</div>
+<br><br><br><br>
+<div id="lastblock" class="blocks">
+END BLOCK
+</div>
+</div>
+<div id="title">
+Block Stacking Experiment
+
+</div>
+</body>
+</html>
